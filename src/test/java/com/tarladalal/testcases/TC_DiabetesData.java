@@ -31,7 +31,7 @@ public class TC_DiabetesData extends BaseClass {
 		} else {
 			captureScreeshot(driver, "browserlaunch");
 			Assert.assertTrue(false);
-			System.out.println("Failed to Launch the website");
+			Loggerload.info("Failed to Launch the website");
 		}
 	}
 
@@ -52,13 +52,13 @@ public class TC_DiabetesData extends BaseClass {
 	public void captureDatainsheet() throws IOException {
 		String excelpath=System.getProperty("user.dir")+"\\src\\test\\resources\\TestData\\8WebScrappersdiabeticdata.xlsx";
 		read=new ExcelReader(excelpath);
-		System.out.println("Read Excel file");
+		Loggerload.info("Read Excel file");
 		read.setcelldata("DiabeticbreakfastRecipe", 0, 0, "RecipeId");
 		read.setcelldata("DiabeticbreakfastRecipe", 0, 1, "Recipename");
 		int pagescount=driver.findElements(By.xpath("//div[@id='maincontent']/div/div/div[3]/a")).size();
-		System.out.println("pagecount" +pagescount);
+		Loggerload.info("pagecount" +pagescount);
 		int cardcount=driver.findElements(By.xpath("//div[@class='rcc_recipecard']")).size();
-		System.out.println("cardcount" +cardcount);
+		Loggerload.info("cardcount" +cardcount);
 		List<String> lst = new ArrayList<String>();
 		List<String> lstforid = new ArrayList<String>();
 		for(int j=1; j<pagescount; j++) {
@@ -79,7 +79,7 @@ public class TC_DiabetesData extends BaseClass {
 			    read.setcelldata("DiabeticbreakfastRecipe", k, 0, lstforid.get(k));
 			   read.setcelldata("DiabeticbreakfastRecipe", k, 1, lst.get(k));
 		   }
-		  System.out.println("Succfully read all data");
+		  Loggerload.info("Succfully read all data");
 
 }
 
