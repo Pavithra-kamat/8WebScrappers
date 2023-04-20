@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-19T18:36:55 MST" name="Suite" finished-at="2023-04-19T18:37:06 MST" duration-ms="11331">
+    <groups>
+    </groups>
+    <test started-at="2023-04-19T18:36:55 MST" name="Test" finished-at="2023-04-19T18:37:06 MST" duration-ms="11331">
+      <class name="com.tarladalal.testcases.TC_DiabetesData">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.tarladalal.testcases.TC_DiabetesData@65fb9ffc]" started-at="2023-04-19T18:36:55 MST" name="setup" finished-at="2023-04-19T18:36:58 MST" duration-ms="2808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="browserlaunch()[pri:1, instance:com.tarladalal.testcases.TC_DiabetesData@65fb9ffc]" started-at="2023-04-19T18:36:58 MST" name="browserlaunch" finished-at="2023-04-19T18:37:01 MST" duration-ms="2858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserlaunch -->
+        <test-method signature="getRecipeDetails()[pri:2, instance:com.tarladalal.testcases.TC_DiabetesData@65fb9ffc]" started-at="2023-04-19T18:37:01 MST" name="getRecipeDetails" finished-at="2023-04-19T18:37:06 MST" duration-ms="5417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getRecipeDetails -->
+        <test-method signature="getDiabeticData()[pri:3, instance:com.tarladalal.testcases.TC_DiabetesData@65fb9ffc]" started-at="2023-04-19T18:37:06 MST" name="getDiabeticData" finished-at="2023-04-19T18:37:06 MST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDiabeticData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tarladalal.testcases.TC_DiabetesData@65fb9ffc]" started-at="2023-04-19T18:37:06 MST" name="tearDown" finished-at="2023-04-19T18:37:06 MST" duration-ms="193" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tarladalal.testcases.TC_DiabetesData -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
