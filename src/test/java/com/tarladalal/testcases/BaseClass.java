@@ -16,7 +16,7 @@ import com.tarladala.utilities.ConfigReader;
 
 import java.time.Duration;
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+//pranusha creating branch 
 public class BaseClass {
  ConfigReader configReader = new ConfigReader();
 
