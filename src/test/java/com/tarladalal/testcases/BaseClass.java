@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 import com.tarladala.utilities.ConfigReader;
+import com.tarladala.utilities.Loggerload;
 
 import java.time.Duration;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -21,7 +22,6 @@ public class BaseClass {
  ConfigReader configReader = new ConfigReader();
 
 	public String baseURL = configReader.getApplicationURl();
-
 	public static WebDriver driver;
 
 	@Parameters("browser")
@@ -32,6 +32,7 @@ public class BaseClass {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("--remote-allow-origins=*");
 			driver = WebDriverManager.chromedriver().capabilities(options).create();
+			Loggerload.info("Chrome Browser setUp done");
 		} else if (br.contains("firefox")) {
 			driver = WebDriverManager.firefoxdriver().create();
 		}
@@ -47,6 +48,18 @@ public class BaseClass {
 		File source=ts.getScreenshotAs(OutputType.FILE);
 		File target=new File(System.getProperty("user.dir")+"/Screenshots"+tname+".png");
 		FileUtils.copyFile(source, target);
-		System.out.println("Screenshot taken");
+		Loggerload.info("Screenshot taken");
+	}
+	
+	public void takescreenshot() {
+		File srcfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File destpath = new File(System.getProperty("user.dir")+"\\Screenshots\\"+".jpg");
+		try {
+			FileUtils.copyFile(srcfile, destpath);
+			Loggerload.info("Screenshot taken");
+		} catch (IOException e) {
+			
+			e.printStackTrace();
+		}
 	}
 }

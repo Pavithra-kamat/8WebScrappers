@@ -6,10 +6,9 @@
     <classes>
       <class name="com.tarladalal.testcases.TC_DiabetesData">
         <methods>
-          <include name="getRecipeDetails"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="browserlaunch"/>
+          <include name="captureDatainsheet"/>
         </methods>
       </class> <!-- com.tarladalal.testcases.TC_DiabetesData -->
     </classes>
