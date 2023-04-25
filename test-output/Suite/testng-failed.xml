@@ -4,14 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.tarladalal.testcases.TC_DiabetesData">
+      <class name="com.tarladalal.testcases.TC_HypothyroidData">
         <methods>
           <include name="getRecipeDetails"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="browserlaunch"/>
         </methods>
-      </class> <!-- com.tarladalal.testcases.TC_DiabetesData -->
+      </class> <!-- com.tarladalal.testcases.TC_HypothyroidData -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

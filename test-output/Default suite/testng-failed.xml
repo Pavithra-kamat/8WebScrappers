@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.tarladalal.testcases.TC_DiabetesData">
+      <class name="com.tarladalal.testcases.TC_HypothyroidData">
         <methods>
+          <include name="browserlaunch"/>
+          <include name="captureDatainsheet"/>
           <include name="getRecipeDetails"/>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="browserlaunch"/>
         </methods>
-      </class> <!-- com.tarladalal.testcases.TC_DiabetesData -->
+      </class> <!-- com.tarladalal.testcases.TC_HypothyroidData -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
