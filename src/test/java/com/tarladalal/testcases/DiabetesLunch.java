@@ -48,7 +48,7 @@ public class DiabetesLunch extends BaseClass {
 	}
 	public void diabeticlunchvegan() throws IOException {
 		con=new ConfigReader();
-		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\web driver\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/WebDriver/geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.get(con.url());
 			driver.manage().window().maximize();
@@ -61,7 +61,7 @@ public class DiabetesLunch extends BaseClass {
 	}
 	public void diabeticlunchjain() throws IOException {
 		con=new ConfigReader();
-		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\web driver\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/WebDriver/geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.get(con.url());
 			driver.manage().window().maximize();
@@ -77,7 +77,7 @@ public class DiabetesLunch extends BaseClass {
 	public void dbtclunchveg() throws IOException {
 		diabeticlunchveg();
 		con=new ConfigReader();
-		   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+		   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 			read=new ExcelReader(excelpath);
 			read.setcelldata("Sheet1", 0, 0, "RecipeId");
 			read.setcelldata("Sheet1", 0, 1, "Recipename");
@@ -203,7 +203,7 @@ public class DiabetesLunch extends BaseClass {
 	public void dbtclunchvegan() throws IOException {
 		diabeticlunchvegan();
 		con=new ConfigReader();
-		   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+		   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 			read=new ExcelReader(excelpath);
 			read.setcelldata("Sheet5", 0, 0, "RecipeId");
 			read.setcelldata("Sheet5", 0, 1, "Recipename");
@@ -352,7 +352,7 @@ public class DiabetesLunch extends BaseClass {
 		diabeticlunchjain();
 		con=new ConfigReader();
 			
-		   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+		   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 			read=new ExcelReader(excelpath);
 			read.setcelldata("Sheet6", 0, 0, "RecipeId");
 			read.setcelldata("Sheet6", 0, 1, "Recipename");

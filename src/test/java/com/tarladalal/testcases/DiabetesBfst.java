@@ -35,7 +35,7 @@ public class DiabetesBfst extends BaseClass{
 	
 	public void diabeticbfstveg() throws IOException {
 		con=new ConfigReader();
-		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\web driver\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/WebDriver/geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.get(con.url());
 			driver.manage().window().maximize();
@@ -48,7 +48,7 @@ public class DiabetesBfst extends BaseClass{
 	}
 	
 	public void diabeticbfstvegan() throws IOException {
-		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\web driver\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/WebDriver/geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.get(con.url());
 			driver.manage().window().maximize();
@@ -61,7 +61,7 @@ public class DiabetesBfst extends BaseClass{
 	}
 	public void diabeticbfstjain() throws IOException {
 		con=new ConfigReader();
-		  System.setProperty("webdriver.gecko.driver", "C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\web driver\\geckodriver.exe");
+		  System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/src/test/resources/WebDriver/geckodriver.exe");
 			driver = new FirefoxDriver();
 			driver.get(con.url());
 			driver.manage().window().maximize();
@@ -78,7 +78,7 @@ public class DiabetesBfst extends BaseClass{
 	public void dbtcbfstvegfirstpages() throws IOException {
 		diabeticbfstveg();
 		con=new ConfigReader();
-		   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+		   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 			read=new ExcelReader(excelpath);
 			read.setcelldata("Eli", 0, 0, "RecipeId");
 			read.setcelldata("Eli", 0, 1, "Recipename");
@@ -222,7 +222,7 @@ public class DiabetesBfst extends BaseClass{
 	public void dbtcbfstveglastpages() throws IOException {
 		diabeticbfstveg();
 		con=new ConfigReader();
-		   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+		   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 			read=new ExcelReader(excelpath);
 			read.setcelldata("Sheet4", 0, 0, "RecipeId");
 			read.setcelldata("Sheet4", 0, 1, "Recipename");
@@ -368,7 +368,7 @@ driver.findElement(By.xpath("//div[@id='maincontent']/div/div/div[3]/a["+j+"]"))
 				diabeticbfstvegan();
 				con=new ConfigReader();
 			
-				   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+				   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 					read=new ExcelReader(excelpath);
 					read.setcelldata("Sheet4", 0, 0, "RecipeId");
 					read.setcelldata("Sheet4", 0, 1, "Recipename");
@@ -499,7 +499,7 @@ driver.findElement(By.xpath("//div[@id='maincontent']/div/div/div[3]/a["+j+"]"))
 				diabeticbfstjain();
 				con=new ConfigReader();
 			
-				   String excelpath="C:\\Users\\amitf\\eclipse-workspace\\Jobinterview\\Recipescrapinghac\\src\\test\\resources\\TestData\\webscrapping.xlsx";
+				   String excelpath=System.getProperty("user.dir") + "/src/test/resources/TestData/8WebScrappersdiabeticdata.xlsx";
 					read=new ExcelReader(excelpath);
 					read.setcelldata("Sheet4", 0, 0, "RecipeId");
 					read.setcelldata("Sheet4", 0, 1, "Recipename");
