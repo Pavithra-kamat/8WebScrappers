@@ -21,5 +21,10 @@ public class ConfigReader {
 		String url=pro.getProperty("baseURL");
 		return url;
 	}
+	public String url() {
+		String url=pro.getProperty("baseURL");
+		return url;
+		
+	}
 
 }

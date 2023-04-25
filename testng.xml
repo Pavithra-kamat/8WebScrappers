@@ -8,7 +8,7 @@
 			<!-- <class name="com.tarladalal.testcases.TC_DiabetesData" /> -->
 			<!-- <class name="com.tarladalal.testcases.TC_PCOSData" />-->
 			<!-- <class name="com.tarladalal.testcases.TC_HypothyroidData" />-->
-			<class name="com.tarladalal.testcases.TC_HypothyroidData" />
+			<class name="com.tarladalal.testcases.TC_PCOSData" />
 			<!-- <class name="com.tarladalal.testcases.TC_HypertensionData"/>-->
 		</classes>
 	</test> <!-- Test -->

@@ -83,8 +83,6 @@ public class TC_HypothyroidData extends BaseClass {
 			read.setcelldata("Hyporthyroidism", 0, 9, "Recipe URL");
 
 			/************** Page Count *****************/
-//		int pagescount = driver.findElements(By.xpath("//a[@class='rescurrpg']")).size();
-//		System.out.println("Number of Pages:" + pagescount);
 			int pagescount = driver.findElements(By.xpath("//div[@id='pagination']/a")).size();
 			System.out.println("pagecount" + pagescount);
 
@@ -114,8 +112,6 @@ public class TC_HypothyroidData extends BaseClass {
 
 					for (int k = 1; k < ReceipeList.size(); k++) {
 						try {
-							// WebElement recpUrl = driver
-							// .findElement(By.xpath("//article[@itemprop='itemListElement'][" + k + "]"));
 							WebElement recpUrl = driver.findElement(By.xpath("//article[@itemprop='itemListElement']["
 									+ k + "]//span[@class=\"rcc_recipename\"]/a"));
 							// recUrlList.add(recpUrl.getAttribute("href"));
